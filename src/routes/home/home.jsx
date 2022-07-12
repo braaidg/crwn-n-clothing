@@ -1,3 +1,5 @@
+import { Outlet } from "react-router-dom";
+
 import Directory from "../../components/directory/directory";
 
 const categories = [
@@ -31,8 +33,12 @@ const categories = [
 
 const Home = () => {
 
+// OUTLET LET THE COMPONENT RENDER AT SPECIFIC LOCATION OF THIS COMPONENT (HOME IS THE OUTLET)
   return (
-    <Directory categories={categories} />
+    <div>
+      <Directory categories={categories} />
+      <Outlet/>
+    </div>
   );
 }
 
