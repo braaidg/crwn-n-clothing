@@ -3,18 +3,9 @@ import {Routes, Route} from 'react-router-dom';
 import Navigation from './routes/navigation/navigation';
 import Home from "./routes/home/home";
 import Authentication from './routes/authentication/authentication';
+import Shop from './routes/shop/shop';
 
 
-const Shop = () => {
-  return (
-    <div>
-      Hi im the shop
-    </div>
-  )
-}
-
-// ROUTE / RENDER NAVIGATION. NAVIGATION RENDER OUTLET UNDER .
-// INDEX MAKE REACT RENDER HOME COMPONENT WHEN MATCH / ROUTE
 const App = () => {
   return (
     <Routes>
